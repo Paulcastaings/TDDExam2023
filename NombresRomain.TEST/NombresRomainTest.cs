@@ -24,8 +24,19 @@ namespace NombresRomain.TEST
         // QUAND on le converti en nombres romains
         var nombreRomain = ConvertNombresRomain.Convertir(chiffreArabe);
 
-        // ALORS j'obtiens I
+        // ALORS j'obtiens II
         Assert.Equal("II", nombreRomain);
+    }[Fact]
+        public void Test3()
+    {
+        // ETANT DONNE le chiffre 3
+        const uint chiffreArabe = 3;
+
+        // QUAND on le converti en nombres romains
+        var nombreRomain = ConvertNombresRomain.Convertir(chiffreArabe);
+
+        // ALORS j'obtiens III
+        Assert.Equal("III", nombreRomain);
     }
 }
 }
