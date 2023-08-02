@@ -3,8 +3,11 @@
     public class ConvertNombresRomain
     {
         public static string Convertir(uint chiffreArabe)
-        {
-            return "I";
-        }
+
+            => chiffreArabe switch
+            {
+                1 => "I",
+                _ => "II",
+            };
     }
 }
